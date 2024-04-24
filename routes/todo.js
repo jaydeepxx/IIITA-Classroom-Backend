@@ -168,7 +168,7 @@ router.get('/:courseId', Authenticate, async (req, res) => {
     }
 });
 
-router.get('/:courdeId/submissions', professorauthenticate ,async (req, res) => {
+router.post('/:courdeId/submissions', professorauthenticate ,async (req, res) => {
     try {
         const { assignmentId } = req.body;
         const submissions = await Submission.find({ assignment: assignmentId })
