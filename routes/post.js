@@ -1,7 +1,7 @@
 const {Router} = require("express");
 const {Course, Student,Professor} = require("../models/index"); 
 const Userauthenticate = require("../middleware/user");
-const upload = require('../middleware/upload');
+const upload = require('../middleware/Upload');
 const router = Router();
 
 router.post("/:courseid", Userauthenticate, upload.single('file'), async (req, res) => {
