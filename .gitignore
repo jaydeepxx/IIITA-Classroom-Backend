@@ -1,0 +1,37 @@
+# Dependency directories
+/node_modules
+
+# Environment variables file
+.env
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Logs
+/logs
+
+# Debugging files
+*.log
+
+# Editor specific files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Dependency lock files
+package-lock.json
+yarn.lock
+
+# Compiled output
+/dist
+
+# Ignore environment specific config
+/config/env/
+
+# Ignore IDE settings
+/.vscode
+
+# Ignore Node.js process files
+npm-debug.log
